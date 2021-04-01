@@ -5,7 +5,7 @@ A Python implementation of simulation based calibration for CmdStan.
 Place pySBC.py in the main directory of CmdStan and run on the command line using `python pySBC.py --option []`.
 
 ## Options
-`--exe` Location of compiled Stan executable for computing SBC. The rank statistics should be defined in an array named `lt_sim` in the generated_quantities block.
+`--exe` Location of compiled Stan executable for computing SBC. The rank statistics should be defined in an array named `lt_sim` in the `generated quantities` block.
 
 `--nt` Number of threads.
 
