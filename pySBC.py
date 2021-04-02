@@ -42,7 +42,7 @@ class chain:
     def generate_seed_and_run(self):
         # generate random seed
         #seed = randint(0,65535,1)
-        seed = randint(0,4294967295,1)
+        seed = randint(0,2147483647,1)
         self.seed = seed[0]
         self.shexec(self.base_command + " random seed={}".format(self.seed))
         self.t = Timer(self.time_out, self.shkill, []) # kill if time specified by time_out passes
